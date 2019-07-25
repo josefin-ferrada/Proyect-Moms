@@ -7,7 +7,7 @@ class Profile extends Component {
   return (
       <React.Fragment>
 
-          <div style={{padding:" 5px", backgroundColor:"#EFEFEF",  margin: "auto",    }}>
+          <div style={{padding:" 5px", backgroundColor:"#EFEFEF",  margin: "auto", }}>
        <h1 className="display-4 d-none d-sm-block"></h1>
               
                 <p className="lead d-none d-sm-block"></p>
@@ -70,17 +70,13 @@ class Profile extends Component {
                     </div>
                 </div>
                 </div>
-
                 <footer className="container-fluid" style={{backgroundColor: "#355E7E "}}>
         <p className="text-right small">©2016-2019 Company</p>
             </footer>
             
-
                 
-
     </React.Fragment>
   );
 }
 }
-
 export default Profile

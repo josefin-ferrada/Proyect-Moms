@@ -21,11 +21,12 @@
     color: white;
     border: none;
 }
-#ingresa, #salir{
+#ingresa{
     background-color: transparent;
     color: white;
     font-size: 14px;
 }
+
 #ingresar{
     color: #254863;
     padding-left: 10px;
@@ -116,7 +117,14 @@ h1{
 #secondtext{
     font-family: 'Open Sans', sans-serif;
 }
-
+.footer{
+    width: 100%;
+    padding-top: 0px;
+    min-height: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-color: #355e7e;
+}
 .footer-newsletter{
     background-color: #F85E76;
 }

@@ -19,6 +19,14 @@ body, html {
   height: 100%;
 }
 
+#salir{
+  border: none !important;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  border-bottom-style: none;
+}
+
 /*
  * Off Canvas sidebar at medium breakpoint
  * --------------------------------------------------

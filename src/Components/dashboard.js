@@ -73,7 +73,7 @@ class Dashboard extends Component{
         }else if(this.state.showComponentProfile){
             return (<Profile/>)
         }else if(this.state.showComponentDefault){
-            return null
+            return <Default/>
         }else{
             return this.state
         }
@@ -105,7 +105,7 @@ class Dashboard extends Component{
                 <a href="javascript:void(0)" onClick={() => this._onButtonClick("profile")}>Perfil</a>
             </li>
             <li>
-            <Link to="/"> <button type="button" className="btn btn-light m-2 active mr-auto" id="salir">Cerrar Sesión</button></Link>
+            <Link to="/"> <button type="button" onClick={() => this.logout()} className="btn btn-light m-2 active mr-auto" id="salir" style={{borderColor:"none"}}>Cerrar Sesión</button></Link>
             </li>
         </ul>
         </div>
