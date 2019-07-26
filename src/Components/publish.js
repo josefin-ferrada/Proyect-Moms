@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/publish.css";
 import Filters from "./filters";
+import { config } from './../firebase/config'
 
 class Publish extends Component {
   constructor(props) {
@@ -12,29 +13,36 @@ class Publish extends Component {
 }
 
   onButtonClick(name) {
+  
     if(name == "filter"){
+      
         this.setState({
             showMoreFilters: true
-            
         })
     }
   }
 showComponent(){
+  
     if(this.state.showMoreFilters){
        return (<Filters />)
     }else {
         return null
     }
 }
-  sendMail() {
-    let to = "jferrada@vchile.cl";
-    let subject = "probando el envio";
-    let message =
-      "hola josefin estoy enviando un correo de prueba, integre un back y el front";
-    let url = "http://advisergroup.cl/email_sender.php";
-    url += "?to=" + to + "&subject=" + subject + "&message=" + message;
+sendMail() {
+  let user = config.auth().currentUser;
+  let to = user.email;
+  let subject = "Reclutamiento Proyecto-Moms";
+  let message =
+    "<img src=''>"
+  let url = "http://advisergroup.cl/email_sender.php";
+  url += "?to=" + to + "&subject=" + subject + "&message=" + message;
+  fetch(url);
+  setTimeout(() => {
     fetch(url);
-  }
+  }, 80000);
+}
+
   
   render() {
     return (
@@ -118,8 +126,9 @@ showComponent(){
           </button>
 
           </div>
+          <div id="filter"> 
           {this.showComponent()}
-               
+          </div>
           <button type="button" class="btn btn-primary" onClick={this.sendMail}>
             Terminar publicación
           </button>

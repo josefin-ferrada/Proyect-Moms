@@ -71,11 +71,9 @@ class Dashboard extends Component{
         }else if(this.state.showComponentPublications){
             return (<Publications/>)
         }else if(this.state.showComponentProfile){
-            return (<Profile/>)
+            return (<Default/>)
         }else if(this.state.showComponentDefault){
-            return <Default/>
-        }else{
-            return this.state
+            return (<Default/>)
         }
     }
 

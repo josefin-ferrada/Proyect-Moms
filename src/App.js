@@ -7,8 +7,8 @@ import Register from './Components/register';
 import  HomeMobile from './Components/homeMobile';
 
 import Dashboard from './Components/dashboard';
-import config from './firebase/config';
-import Publish from './Components/publish';
+import { config } from './firebase/config';
+
 
 
 class App extends Component {

@@ -16,6 +16,7 @@ class Default extends Component {
 
     this.getUser()
   } */
+  
     
     render() {
   return (
