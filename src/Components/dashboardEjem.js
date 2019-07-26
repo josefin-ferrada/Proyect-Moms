@@ -102,7 +102,7 @@ class Dashboard extends Component {
                     <li className="nav-item"><a href="javascript:void(0)" value="publications" onClick={() => this._onButtonClick("publications")}>Publicaciones</a></li>
                     <li className="nav-item"><a href="javascript:void(0)" name="publish" onClick={() => this._onButtonClick("publish")}>Publicar</a></li>
                     <li className="nav-item"><a href="javascript:void(0)" onClick={() => this._onButtonClick("profile")}>Perfil</a></li>
-                    <Link to="/"><button onClick={this.logout}>Cerrar sesión</button></Link>
+                    <Link to="/"><button onClick={this.logout} id="logout">Cerrar sesión</button></Link>
                    
                 </ul>
             </div>

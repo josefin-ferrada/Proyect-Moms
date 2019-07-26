@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import group from './../img/group.png';
+import '../css/default.css';
 
 
 
