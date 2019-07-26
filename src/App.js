@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter , Route, Switch } from 'react-router-dom';
-import Login from './Components/login';
-import Register from './Components/register';
-import  HomeMobile from './Components/homeMobile';
+import React, { Component } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "./Components/login";
+import Register from "./Components/register";
+import HomeMobile from "./Components/homeMobile";
 
-import Dashboard from './Components/dashboard';
-import { config } from './firebase/config';
-import Home from './Components/home'
-
-
+import Dashboard from "./Components/dashboard";
+import { config } from "./firebase/config";
+import Home from "./Components/home";
+import NotFound from "./Components/404";
 
 class App extends Component {
   constructor() {
     super();
-    this.state = ({
-      user: null,
-    });
+    this.state = {
+      user: null
+    };
     this.authListener = this.authListener.bind(this);
   }
 
@@ -26,34 +25,44 @@ class App extends Component {
   }
 
   authListener() {
-    config.auth().onAuthStateChanged((user) => {
+    config.auth().onAuthStateChanged(user => {
       console.log(user);
       if (user) {
         this.setState({ user });
-        localStorage.setItem('user', user.uid);
+        localStorage.setItem("user", user.uid);
       } else {
         this.setState({ user: null });
-        localStorage.removeItem('user');
+        localStorage.removeItem("user");
       }
     });
   }
-  render(){
-  return (
-  <BrowserRouter>
-    <Switch>
-    
-    <Route exact path="/login" component={this.state.user ?  Dashboard : Login}/>
-    <Route exact path="/register" component={this.state.user ?  Dashboard : Register} />
-    <Route exact path="/" component={HomeMobile} />
-    <Route  path="/dashboard" component={this.state.user ?  Dashboard : Login} />
-    <Route exact path="/home" component={Home} />
-   
-  
-
-    </Switch>
-  </BrowserRouter>
-  );
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route
+            exact
+            path="/login"
+            component={this.state.user ? Dashboard : Login}
+          />
+          <Route
+            exact
+            path="/register"
+            component={this.state.user ? Dashboard : Register}
+          />
+          <Route exact path="/" component={Home} />
+          <Route
+            path="/dashboard"
+            component={this.state.user ? Dashboard : Login}
+          />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/nosotros" component={NotFound} />
+          <Route exact path="/servicios" component={NotFound} />
+          <Route exact path="/contactanos" component={NotFound} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
-}
 
-export default App
+export default App;

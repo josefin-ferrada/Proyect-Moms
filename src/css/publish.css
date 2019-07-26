@@ -1,0 +1,20 @@
+#publishAnOfer {
+  text-align: -webkit-left;
+  padding: 20px;
+  color: #355e7e;
+}
+::placeholder {
+  color: #959595;
+}
+option[selected] {
+  color: #959595;
+}
+.publica {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 55px;
+  text-align: center;
+  color: #355e7e;
+  font-weight: 400;
+}

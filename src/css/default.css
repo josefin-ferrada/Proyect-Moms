@@ -1,4 +1,31 @@
 #col-main {
-    padding-top: 150px !important;
-    text-align: center !important;
+  padding-top: 90px !important;
+  text-align: center !important;
+}
+
+#resume {
+  text-align: left;
+  display: -webkit-inline-box;
+}
+.tam {
+  width: 300px;
+}
+
+#publish {
+  width: 300px;
+}
+.color {
+  background-color: #f85e76;
+}
+.white {
+  background-color: white;
+}
+.publica {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 55px;
+  text-align: center;
+  color: #355e7e;
+  font-weight: 400;
 }

@@ -71,6 +71,7 @@
 
 .btn-primary {
   background-color: #f85e76;
+  border-color: #f85e76;
 }
 .btn-primary:hover {
   color: #fff;
@@ -84,6 +85,10 @@
   background-color: #c76272;
   border-color: #c76272;
 }
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-color: none !important;
+}
 
 .second-intro {
   background-color: #eeeeee;
@@ -95,6 +100,7 @@
 .card-body {
   border-bottom: 4px solid #f85e76;
   margin-bottom: 30px;
+  color: #355e7e;
 }
 .card {
   text-align: -webkit-center;

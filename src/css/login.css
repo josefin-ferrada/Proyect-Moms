@@ -1,28 +1,36 @@
-*{
-    font-family: 'Open Sans', sans-serif;
+* {
+  font-family: "Open Sans", sans-serif;
 }
 
-.text-success{
-    margin-top: 25px !important;
-    color:#355E7E !important;
+.text-success {
+  margin-top: 25px !important;
+  color: #355e7e !important;
 }
-.card{
-    background-color:#EFEFEF; 
-    border-color:#EFEFEF;
+.card {
+  background-color: #efefef;
+  border-color: #efefef;
 }
-#log{
-    background-color:#F85E76 !important;
-    border-color:#F85E76;
-    margin-bottom: 15px;
-    margin: auto;
-    text-decoration-skip-ink: none;
+#log {
+  background-color: #f85e76 !important;
+  border-color: #f85e76;
+  margin-bottom: 15px;
+  margin: auto;
+  text-decoration-skip-ink: none;
 }
-#unete{
-    margin: auto;
+#unete {
+  margin: auto;
 }
-#btn{
-    background-color:#F85E76 !important;
-    border-color: #F85E76 !important;
+#btn {
+  background-color: #f85e76 !important;
+  border-color: #f85e76 !important;
+}
+#align {
+  text-align: left !important;
+}
+#separate {
+  padding-bottom: 20px;
 }
 
-
+.none {
+  border-bottom: none;
+}

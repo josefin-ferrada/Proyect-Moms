@@ -26,9 +26,11 @@ function Home() {
           <p id="first-title">
             Te ayudamos a cubrir puestos de trabajo según tus necesidades.
           </p>
-          <button type="button" class="btn btn-primary">
-            REGISTRA TU EMPRESA
-          </button>
+          <Link to="/register">
+            <button type="button" class="btn btn-primary">
+              REGISTRA TU EMPRESA
+            </button>
+          </Link>
         </div>
       </div>
       <div className="second-intro">
