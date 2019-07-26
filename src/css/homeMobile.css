@@ -1,139 +1,50 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-}
-.bg-light {
-    background-color: #355e7e !important;
-    color: white !important;
-    text-align: center !important;
-    width: 100%;
+.navbar{
+    position: fixed;
+    background-color: #3D567F;
+    width: -webkit-fill-available;
 }
 
-.home-intro{
-    padding-top: 150px;
+.back-intro{
+background-image: url('../img/intro.png');
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+align-items: center;
+text-align: center;
+padding-top: 90px;
 }
 
-.home-purpose{
-    min-height: 100px;
+#first-title{
+font-family: Playfair Display;
+font-style: normal;
+font-size: 44px;
+line-height: 55px;
+text-align: center;
+color: #FFFFFF;
+font-weight: 400;
 }
 
-#unete, #unetea{
-    background-color: #F85E76;
+.par{
     color: white;
-    border: none;
-}
-#ingresa{
-    background-color: transparent;
-    color: white;
-    font-size: 14px;
-}
-
-#ingresar{
-    color: #254863;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-}
-
-#purpose, #purpose2, #purpose3{
-    border-bottom: 4px solid #F85E76;
-    margin-bottom: 30px;
-    width: 22rem;
-}
-
-.card .card-body{
-    color: #355e7e;
-    
-}
-
-.row{
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-}
-#registro, #ingresarEmp{
-    background-color: #F85E76;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-#services, #services1, #services2{
-    width: 22rem;
-}
-
-#title-services, #title-services1, #title-services2{
-    background-color: #254863;
-}
-
-#logo-footer, #logo-nav{
-   width: 150px;
-}
-
-#learnmore{
-    color: white;
-    background-color: transparent;
-    margin-top: 20px !important;
-}
-
-
-/* DASHBOARD*/
-
-
-.bg-light ul li a{
-    text-decoration: none;
-    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    width: 60%;
+    margin-left: 22%;
     text-align: center;
 }
-.bg-light ul li{
-    padding: 10px;
-}
-.bg-light ul li .active{
-    float: right;
-}
-#col-main{
-    padding-top: 80px !important;
+.container-intro{
+    padding-top: 60px;
+   
 }
 
-h1{
-    font-family: 'Playfair Display', serif;
-    font-weight: bold; 
+.btn-primary{
+   background-color: #f85e76
 }
 
-#container2{
-    background-image: url('../img/workmom.png');
-    background-repeat: no-repeat;
+.second-intro{
+    background-color: #eeeeee;
+height: 600px;
+align-items: center;
+text-align: center;
+padding-top: 90px;
 }
-
-#impact{
-    font-size: 34px !important;
-    color:white;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 2%;
-}
-#enfoque{
-    color:#F85E76;
-}
-#secondtext{
-    font-family: 'Open Sans', sans-serif;
-}
-.footer{
-    width: 100%;
-    padding-top: 0px;
-    min-height: 100px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    background-color: #355e7e;
-}
-.footer-newsletter{
-    background-color: #F85E76;
-}
-@media (max-width: 600px) {
-    #bigfooter{
-      display: none;
-    }
-    .footer-newsletter{
-        display: none
-    }
-  }
-

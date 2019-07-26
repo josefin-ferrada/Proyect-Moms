@@ -8,6 +8,7 @@ import  HomeMobile from './Components/homeMobile';
 
 import Dashboard from './Components/dashboard';
 import { config } from './firebase/config';
+import Home from './Components/home'
 
 
 
@@ -45,7 +46,7 @@ class App extends Component {
     <Route exact path="/register" component={this.state.user ?  Dashboard : Register} />
     <Route exact path="/" component={HomeMobile} />
     <Route  path="/dashboard" component={this.state.user ?  Dashboard : Login} />
-    <Route exact path="/home" component={HomeMobile} />
+    <Route exact path="/home" component={Home} />
    
   
 

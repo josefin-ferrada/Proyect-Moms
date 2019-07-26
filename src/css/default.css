@@ -1,41 +1,4 @@
-*{
-    font-family: 'Open Sans', sans-serif;
+#col-main {
+    padding-top: 150px !important;
+    text-align: center !important;
 }
-.contentuser{
-    margin: 50px ;
-}
-
-    #col-main {
-        padding-top: 60px !important;
-        text-align: center !important;
-    }
-    #optionitem{
-        margin-right: 10px;
-    }
-
-    .fas{
-        margin-right: 10px !important;
-        text-align: left;
-        padding: 0px;
-    }
-    h1{
-        font-family: 'Playfair Display', serif;
-        font-weight: bold; 
-        color: #254863;
-    }
-   .card-body{
-    color: #254863;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-   }
-
-   #footerdefault{
-       margin-top: 10px;
-   }
-
-   #publish{
-    background-color:#F85E76 !important;
-    border-radius: 8px;
-    margin: auto;
-    color: white
-   }

@@ -21,7 +21,8 @@ class Default extends Component {
     return (
       <React.Fragment>
         <div className="contentuser">
-          <img src={group} class="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"></img>
+          <div id="userIcon"><img src={group} class="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"></img>
+          </div>
           <h1>Bienvenido</h1>
           <span class="text-muted">Device agnostic</span>
           <div className="card-body">

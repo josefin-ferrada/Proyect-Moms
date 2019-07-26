@@ -47,9 +47,9 @@ sendMail() {
   render() {
     return (
       <React.Fragment>
-        <form id="publish">
+        <form >
           <h1>Publica un empleo</h1>
-          <h3>Información del cargo</h3>
+          
           <div class="form-group">
           <label htmlFor="inputAddress">Título empleo</label>
           <input
