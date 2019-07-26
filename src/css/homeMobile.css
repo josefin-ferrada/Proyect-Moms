@@ -1,50 +1,122 @@
-.navbar{
-    position: fixed;
-    background-color: #3D567F;
-    width: -webkit-fill-available;
+.navbar {
+  position: fixed;
+  background-color: #355e7e;
+  width: -webkit-fill-available;
+  z-index: 9999;
 }
 
-.back-intro{
-background-image: url('../img/intro.png');
-background-repeat: no-repeat;
-background-size: cover;
-height: 600px;
-align-items: center;
-text-align: center;
-padding-top: 90px;
+.back-intro {
+  background-image: url("../img/intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
 }
 
-#first-title{
-font-family: Playfair Display;
-font-style: normal;
-font-size: 44px;
-line-height: 55px;
-text-align: center;
-color: #FFFFFF;
-font-weight: 400;
+#first-title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+}
+#second-title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 55px;
+  text-align: center;
+  color: #355e7e;
+  font-weight: 400;
 }
 
-.par{
-    color: white;
-    font-family: Montserrat, sans-serif;
-    font-size: 12px;
-    width: 60%;
-    margin-left: 22%;
-    text-align: center;
+.parWhite {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  width: 60%;
+  margin-left: 22%;
+  text-align: center;
 }
-.container-intro{
-    padding-top: 60px;
-   
+.parPink {
+  color: #f85e76;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  width: 60%;
+  margin-left: 22%;
+  text-align: center;
+}
+.parBlue {
+  color: #3d567f;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  width: 60%;
+  margin-left: 22%;
+  text-align: center;
+}
+.parCopy {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 11px;
+  font-family: Roboto, sans-serif;
+  line-height: 20px;
+  font-weight: 100;
+}
+.container-intro {
+  padding-top: 60px;
 }
 
-.btn-primary{
-   background-color: #f85e76
+.btn-primary {
+  background-color: #f85e76;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #c76272;
+  border-color: #f85e76;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #c76272;
+  border-color: #c76272;
 }
 
-.second-intro{
-    background-color: #eeeeee;
-height: 600px;
-align-items: center;
-text-align: center;
-padding-top: 90px;
+.second-intro {
+  background-color: #eeeeee;
+  height: 1100px;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+.card-body {
+  border-bottom: 4px solid #f85e76;
+  margin-bottom: 30px;
+}
+.card {
+  text-align: -webkit-center;
+  display: inline-flex;
+}
+
+.end-btn {
+  background-color: none !important;
+
+  color: #fff;
+
+  border-color: white !important;
+}
+footer {
+  background-color: white;
+  height: 250px;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.copy {
+  height: 50px;
+  background-color: #355e7e;
 }
